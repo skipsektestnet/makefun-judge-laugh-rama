@@ -8,7 +8,7 @@ LINE = "The office printer has been warming up since Tuesday, which is officiall
 
 
 def validate():
-    """Check the joke is a single line of 1 to 200 characters."""
+    """Check the joke is a single office-themed line of 1 to 200 characters."""
     assert LINE.count("\n") == 0, "joke must be a single line"
     assert 0 < len(LINE) <= 200, f"expected 1-200 chars, got {len(LINE)}"
     assert LINE.strip() == LINE, "joke must not have leading/trailing whitespace"
